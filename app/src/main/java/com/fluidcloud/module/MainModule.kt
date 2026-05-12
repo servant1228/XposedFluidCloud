@@ -57,7 +57,9 @@ class MainModule : XposedModule() {
                     return chain.proceed()
                 }
             })
-        } catch (_: Throwable) {}
+        } catch (e: Throwable) {
+            Log.w("FluidCloud", "hookFluidCloud failed", e)
+        }
     }
 
     private fun hookCapsuleHeight() {

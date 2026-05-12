@@ -49,6 +49,11 @@ object Settings {
         loaded = true
     }
 
+    fun forceReload() {
+        loaded = false
+        ensureLoaded()
+    }
+
     fun save() {
         try {
             val file = File(PRIVATE_PATH)

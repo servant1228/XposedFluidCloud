@@ -13,8 +13,8 @@ ColorOS 16 流体云 UI 调整 Xposed 模块
 
 ## 使用
 
-1. 安装模块并激活（推荐 LSPosed）
-2. 勾选目标应用（系统界面）
+1. 安装模块并激活
+2. 勾选推荐作用域应用
 3. 重启系统界面或重启手机
 4. 打开模块进行个性化设置
 
@@ -24,9 +24,7 @@ ColorOS 16 流体云 UI 调整 Xposed 模块
 # Debug 包
 ./gradlew assembleDebug
 
-# Release 包（需要签名密钥）
-$env:KEYSTORE_PASSWORD="你的密码"
-$env:KEY_PASSWORD="你的密码"
+# Release 包
 ./gradlew assembleRelease
 ```
 
@@ -41,6 +39,3 @@ APK 输出在 `app/build/outputs/apk/`
 
 GNU General Public License v3.0
 
-## 致谢
-
-- Coolapk@那泛滥的思绪 - 原作者
